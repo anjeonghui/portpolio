@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dopetrope by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="fullPage fixed full-screen backgrounds." />
+		<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+		
+		<link rel="stylesheet" href="css/fes.css"  media="screen" charset="utf-8"/>
+		<link media="screen and (max-width:768px)" rel="stylesheet" href="css/fes_m.css">
+		<link rel="stylesheet" href="css/rs_slide.css" />
+		
+	    <link rel="stylesheet" href="css/splide.min.css">
+
+
+		
+		
+		 
+		 <script src="js/jquery.js"></script>
+		   <script src="js/splide.min.js"></script> 
+	
+</head>
+
+
+<script>
+       
+  document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+        
+        perPage    : 3,
+        perMove: 1,
+        height: '56vh',
+        focus    : 'center',
+		breakpoints: {
+			600: {
+				perPage: 1,
+			}
+		}
+        
+	} ).mount();
+} );
+    </script>
+<body>
+   <!-- Page Wrap -->
+<div id="card-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="img/din/din0.jpg">
+				<h2>에그몬</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					햄&amp;치즈몬, 베이컨치즈몬, 핫차킨몬, 아메리카노, 카페라떼, 쉐이크
+				</div>
+			</li>
+			<li class="splide__slide">
+				<img src="img/din/din1.jpg">
+				<h2>걸작떡볶이 치킨</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					국물떡볶이, 순살치킨, 떡닭세트, 모둠튀김, 소떡소떡
+
+
+				</div>
+			</li>
+			<li class="splide__slide">
+				<img src="img/din/din2.jpg">
+				<h2>캔디캐슬(크로플)</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					프렌치크로플, 솔티드카라멜크로플, 앙버터크로플, 커피
+
+
+				</div>
+			</li>
+			<li class="splide__slide">
+				<img src="img/din/din3.jpg">
+				<h2>오벨리스크</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					생크림와플, 스낵류 (소떡소떡, 핫바, 츄러스), 구슬 아이스크림, 소프트아이스크림, 음료
+
+
+				</div>
+			</li>
+			<li class="splide__slide">
+				<img src="img/din/din4.jpg">
+				<h2>파라오스낵</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					국물떡볶이, 순살치킨, 떡닭세트, 모둠튀김, 소떡소떡
+
+
+				</div>
+			</li>
+           <li class="splide__slide">
+				<img src="img/din/din5.jpg">
+				<h2>라팔로마(라라코스트)</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					파스타, 피자, 커틀렛, 필라프
+
+
+				</div>
+			</li>
+           <li class="splide__slide">
+				<img src="img/din/din6.jpg">
+				<h2>더 쓰리위시스</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					한식, 중식, 분식, 디저트 <br>
+                    <p>이용 안내 : 라스트 오더는 20:00까지 입니다.</p>
+
+				</div>
+			</li>
+           <li class="splide__slide">
+				<img src="img/din/din7.jpg">
+				<h2>카페다쥬르</h2>
+				<h4>대표메뉴</h4>
+				<div>
+					불고기버거, 치킨버거, 포테이토
+
+
+				</div>
+			</li>
+            
+		</ul>
+	</div>
+</div>
+    
+</body>
+</html>

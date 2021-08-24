@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+    
+     ul{list-style:none; margin:0; padding:0; counter-reset:list-number;} 
+        ul li{counter-increment:list-number; line-height:2} 
+        ul li:before{content:counter(list-number);
+
+            display:inline-block; text-align:center; line-height:1.2;  width:1.2em; height:1.2em; border-radius:100%; color:#fff; margin-right:10px; background:brown;} 
+      div h3 {
+          line-height: 35px; font-size:20px;background-color: #ccc; text-indent: 1em;
+          
+      }
+      div h3:hover {
+          background-color: #661eec;  color:#ccc; font-weight: bold; 
+      }
+      
+ .btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgb(178, 20, 216) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+     width:12em; height:3em;
+     margin:1em;
+     border-radius: 10px;
+     cursor:pointer;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+    </style>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3>롯데월드 어드벤처 운영 안내</h3>
+  <div>
+    <p>
+    안녕하세요.
+모험과 신비의 나라 롯데월드 어드벤처입니다.
+
+사회적 거리두기 4단계 시행에 따라 7.12(월)~7.25(일) 2주간
+롯데월드 어드벤처 운영 변경사항을 아래와 같이 안내해드립니다.
+손님여러분께서는 이용에 불편이 없으시기 바랍니다.</p>
+   
+ <p>1) 운영 시간
+   - 매일(주중,주말) : 10:00~21:00</p>
+<span>2) 운영 안내</span>
+   <p>- 오후6시 이후 3인 이상 티켓구매 및 입장이 제한됩니다.
+     ※ 오후6시 이후 3인 이상 입장 시, 게이트에서 동거가족 증빙자료를
+        필수로 제시하셔야 합니다.</p>
+   <p>- 오후6시 이후 어드벤처 전역에서 3인 이상 집합이 제한됩니다.
+     (적용대상 : 어트랙션, 식음/상품매장, 공연관람 등 모든 이용)</p>
+   <p>- 오후6시 이후 거리공연 및 퍼레이드 등 일부 공연 운영이 중단됩니다.
+     (기간 : 7.10(토)~7.25(일)) </p>      
+    
+  </div>
+  <h3>개인정보 처리방침 변경 안내</h3>
+  <div>
+    <p>
+    안녕하세요. 모험과 신비의 나라 롯데월드 어드벤처 입니다.
+롯데월드 어드벤처 개인정보처리방침이 개정되어 변경 내용을 공지합니다 <br><br> 
+    </p>
+    <li><img src="img/gaininfo.jpg" alt=""></li>
+  </div>
+  <h3>연간 이용 블루권 판매종료 안내</h3>
+  <div>
+    <p>
+    안녕하세요, 모험과 신비의 나라 롯데월드 어드벤처입니다. 롯데월드 어드벤처는 2월 1일부터 연간이용 블루권의 판매를 종료합니다. 그동안 연간이용 블루권을 애용해주신 손님 여러분께 감사드라먀 앞으로도 롯데월드 어드벤처를 이용해주시는 손님 여러분께 더 나은 서비스로 보답하겠습니다.
+    </p>
+    <li><img src="img/bluegwon.jpg" alt=""></li>
+    <!--<ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>-->
+  </div>
+  <h3>롯데월드 어드벤처 이용 안내</h3>
+  <div>
+    <p>
+   안녕하세요, 모험과 신비의 나라 롯데월드 어드벤처입니다. <br>
+   롯데월드 어드벤처는 코로나 19 관련해 서울특별시 유원시설 업체 방역조치 고시에 따라 이용시설 변경 사항을 아래와 같이 공지합니다.
+    </p>
+    <ul>
+      <li><span>공연 운영</span><br>
+      -파크 내에서 진행하는 공연을 재개합니다 <br>
+      운영하는 공연 목록과 시간을 아래 페이지에서 확인하실 수 있습니다.
+      </li>
+      <button class="btn-11"><span>공연시간 확인하기</span></button>
+      <li><span>레스토랑 이용</span><br>
+      -파크 내 레스토랑에서 식사 및 테이크아웃이 가능합니다. <br>
+      이용 가능한 레스토랑의 목록을 아래 페이지에서 확인하실 수 있습니다.
+      </li>
+      <button class="btn-11"><span>레스토랑 확인하기</span></button>
+      <p>롯데월드 어드벤처는 손님과 직원의 안전을 최우선으로 하고 있으며, <br>
+      향후 상황에 따라 신속하게 추가적인 대응 조치들을 마련할 예정입니다.</p>
+      <button class="btn-11"><span>방역지침 확인하기</span></button>
+    </ul>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>

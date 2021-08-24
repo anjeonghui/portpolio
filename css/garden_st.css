@@ -1,0 +1,261 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+
+
+.section{
+		text-align:center;
+   
+	}
+#headerm {
+    width:100%; height:45em;
+}
+
+#headerm img {
+    width:100%; height:100%;
+    position: relative;
+    top:0; left:0;
+    margin: 0 auto;
+}
+
+
+
+
+#headerm .image h1 {
+    font-size: 4em;
+    line-height: 58px;
+    margin-top: -30%;
+position:absolute;
+    width:100%;
+    text-align:center;
+    background-image: url(../img/gs/firee.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+    
+}
+
+/**/
+#headerm .image h2 {
+    margin-top: -36%;
+    text-align:center;
+    font-size: 35px;
+    line-height: 120px;
+    width:100%;
+     display:inline-block;
+  white-space:nowrap;
+    color:rgba(57, 52, 52, 0.88);
+}
+#header .image h2:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+#header .image h2:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+#header .image h2:last-of-type span {
+  margin-left:30%;
+  animation: slidein 7s infinite;
+    
+}
+/*
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-25%; opacity:1;}
+    20% { margin-left:-45%; }
+    35% { margin-left:-80%; opacity:0.6; }
+    100% { margin-left:-120%; opacity:0; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:45%;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+ /**/
+
+
+#headerm .featured h2 {
+    text-align:center;
+    font-size: 25px;
+    margin-top: -23%;
+    line-height: 10px;
+position:absolute;
+}
+
+
+#main .container1 {
+    
+    border:0px solid black;
+    width:100%; 
+    top:0; left:0;
+    background: url(../img/gs/);
+}
+#main #main_box {
+   width : 100%;
+	height : 100%;
+	padding-top : calc (1000 / 1000 * 100 %); 
+	background : url(../img/gs/Untitled-4.jpg) center center / cover no-repeat;
+    position: relative;
+    width: 100%; height: 100vh;
+    border: 0px solid black;
+    overflow: auto;
+}
+
+
+/*
+
+
+*/
+
+
+/**/
+/* 1 */
+
+/* 6 */
+/* 15 */
+.btn-15 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+    margin:30px auto;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+
+/**/
+
+
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	
+}
+
+
+@media only screen and (min-width: 500px) {
+ 
+}
+
+@media only screen and (min-width: 850px) {
+ 
+}
+
+
+
+/**/
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    
+   
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+  #main {
+    background-color: white;
+    border:0px solid black;
+    height:240vh;
+}
+    
+ #headerm .image h1 {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: -30%;
+position:absolute;
+    width:100%;
+    text-align:center;
+    background-image: url(../img/gs/0QmtVL.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+    
+}
+
+/**/
+#headerm .image h2 {
+    margin-top: -30%;
+    text-align:center;
+    font-size: 18px;
+    line-height: 120px;
+    width:100%;
+     display:inline-block;
+  white-space:nowrap;
+    color:rgba(57, 52, 52, 0.88);
+}
+    
+    
+    .container1{
+	width: 100%; 
+	 top:0;
+}
+    #footer{
+        margin-top: 20%;
+    }
+    
+
+
+      
+    
+    
+    
+    
+}
+

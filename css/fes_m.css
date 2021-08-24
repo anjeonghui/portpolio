@@ -1,0 +1,121 @@
+.fsmenu {
+    position: fixed;
+    top: 85%; right: -46.5%;
+    width: 50em; height: 10em;
+    z-index:9999;
+    
+}
+.fsmenu li {
+    float:left;
+    width: 80px; height: 80px;
+    margin-left:5%;
+    border: 1px solid rgba(48, 168, 178, 0.73);
+    margin-bottom: 50px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    border-radius: 100%;
+    text-align: center;
+    
+    line-height: 100px;
+    text-align:center;
+    line-height:75px;
+    cursor:pointer;
+    font-size: 12px;
+    z-index: 9;
+    padding:1%;
+    
+    
+}
+#section0 h2 {
+    margin-top: 45%;
+    margin: 30% auto;
+}
+
+
+
+#section1 .hot {
+    margin:25px auto;
+    margin-top:21%;
+    width:100%; height:37em; padding:0;
+    display: flex;
+    flex:1;
+}
+#section1 .btn-1 {
+  border: none;
+  color: #000;
+   margin-top: 15%;
+}
+#section2 h3{
+		top: 7%;
+		transform: translateY(-50%);
+		position: relative;
+        font-size: 40px;
+	}
+#section2 .btn-2 {
+  border: none;
+  color: #000;
+   margin-top: 18%;
+}
+#section2 .para {
+    margin:25px auto;
+    margin-top:21%;
+    width:100%; height:37em;
+    padding:0;
+    display: flex;
+    flex:1;
+    
+}
+#section3{top:3000px; background-size: cover;
+		background-attachment: fixed;
+        width:100%; height:120vh;
+        z-index:99;}
+
+
+#section3 #tab-cont {
+  width: 100%; height:110vh;
+  background: #fff; padding: 20px; 
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+    width: 100%; height:105vh;
+}
+
+#section3 .img-placeholder {
+color:#fff;
+    margin-top: -10%;
+line-height: 20px;
+ font-size: 16px;
+    font-weight:400;
+text-align: center;
+display: block;
+ position: absolute;
+    
+}
+
+#section3 .goods {
+    width:100%; height:100%;
+}
+
+#section3 .img-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#section3 .img-list li {
+border: 5px solid transparent;
+box-sizing: border-box;
+width: 50%; 
+float: left;
+position: relative;
+cursor: pointer;
+    margin-bottom: 20px;
+}
+#section3 .img-list img {
+max-width: 100%;
+vertical-align: middle;
+}

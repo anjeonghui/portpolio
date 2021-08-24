@@ -1,0 +1,436 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+#main {
+    background-color: white;
+    border:0px solid black;
+}
+/*섹션메뉴*/
+.fsmenu {
+    position: fixed;
+    top: 60%; right: 2%;
+    width: 10em; height: 10em;
+    z-index:9999;
+    
+}
+.fsmenu li {
+    width: 100%; height: 50px;
+    border: 1px solid rgba(48, 168, 178, 0.73);
+    margin-bottom: 30px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    border-radius: 20px;
+    line-height: 42px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+    font-size: 16px;
+    z-index: 9;
+    list-style:none;
+    
+}
+.fsmenu li:hover {font-weight:bold; background-color: #89d8d3; color:#ccc;
+background-image: linear-gradient(315deg, rgba(184, 79, 216, 0.83) 0%, #03c8a8 74%); text-shadow: 0,2em,2em,2em, rgba(100, 94, 94, 0.56);}
+
+
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0{top:0px; background-size: cover;
+		background-attachment: fixed;
+        width:100%; height:700px;
+        z-index:99;}
+	#section1{top:1000px; background-size: cover;
+		background-attachment: fixed;
+        width:100%; height:1100px;
+        z-index:99;}
+	#section2{top:2000px; background-size: cover;
+		background-attachment: fixed;
+		padding: 6% 0 0 0;
+        
+        width:100%; height:1100px;
+        z-index:99;}
+	#section3{top:3000px; background-size: cover;
+		background-attachment: fixed;
+        width:100%; height:1100px;
+        z-index:99;}
+    #slide1,
+    #slide2{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+/*
+.content1 {top:1000px}
+.content2 {top:2000px; background: rgba(33, 154, 130, 0.72);}
+.content3 {top:3000px;
+
+*/
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(../img/fs/bg2.jpg);
+        background-size: cover;
+        position: relative;
+	}
+#section0::before{
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #000;
+    }
+
+
+	#section0 .image  h3 {
+    font-size: 4.5em;
+    line-height: 78px;
+    margin-top: 7%;
+position:absolute;
+    width:100%;
+    text-align:center;
+    background-image: url(../img/gs/0QmtVL.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+   
+}
+
+/**/
+
+#section0 .image h2 {
+     margin-top:20%;
+    text-align:center;
+    font-size: 1.6em;
+    line-height: 20px;
+    width:100%;
+     display:inline-block;
+  white-space:nowrap;
+    color: #fff;
+    position: relative;
+}
+
+
+
+/*핫플레이스 소개*/
+#section1{
+		background-image: url(../img/fs/bg1.jpg);
+		padding: 6% 0 0 0;
+	}
+
+#section1 h3{
+		top: 5%;
+		transform: translateY(-50%);
+		position: relative;
+        font-size: 40px;
+	}
+
+#section1 .hot {
+   margin:35px auto;
+    width:66em; height:38em;
+    border:1px solid #ccc;
+     overflow: hidden;
+    padding:0 auto;
+    background: url(../img/fs/hotbag.jpg);
+    background-size: cover;
+    display: flex;
+    flex:1;
+} 
+
+/* 1 */
+#section1 .btn-1 {
+  border: opa solid black;
+  color: #000;
+  margin-top: 7%;
+    background: rgba(13, 46, 183, 0.74);
+    width:11em; height:2.5em;
+    position: relative;
+    
+}
+#section1 .btn-1:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+   
+}
+#section1 .btn-1:hover {
+    background: rgba(216, 25, 25, 0.81); 
+    
+}
+#section1 .btn-1:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+    
+    
+}
+#section1 .btn-1:active {
+  top: 2px;
+}
+
+/* 16 */
+#section2 .btn-2 {
+   border: opa solid black;
+  color: #000;
+     background: rgba(13, 46, 183, 0.74);
+   margin-top: 7%;
+   width:11em; height:2.5em;
+    position: relative;
+}
+#section2 .btn-2:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+#section2 .btn-2:hover {
+    background: rgba(216, 25, 25, 0.81);
+   
+}
+#section2 .btn-2:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+#section2 .btn-2:active {
+  top: 2px;
+}
+
+	#section2{
+		background-image: url(../img/fs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+
+
+/*공연안내*/
+
+#section2 .para {
+    margin:35px auto;
+    width:66em; height:38em;
+    border:1px solid #ccc;
+     overflow: hidden;
+    padding:0 auto;
+    background: url(../img/fs/parabafg.jpg);
+    background-size: cover;
+    display: flex;
+    flex:1;
+}
+
+
+
+#section2 h3{
+		top: 5%;
+		transform: translateY(-50%);
+		position: relative;
+        font-size: 40px;
+    
+	}
+	#section3{
+		background-image: url(../img/fs/bg0.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h3{
+		top: -5%;
+		transform: translateY(-50%);
+		position: relative;
+        font-size: 40px;
+        
+	}
+	}
+
+
+/*tab menu*/
+
+.container{
+	width: 100%; height:70vh;
+	margin: 0 auto;
+}
+
+
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: rgba(226, 35, 35, 0.77);
+    width:170px;
+	color: #ccc;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+    color: rgba(42, 37, 37, 0.85);
+	
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+    width: 100%; height:70vh;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+/*modal*/
+
+/*베너 */
+#section3 .goods {
+    width:100%; height:70vh;
+}
+
+#section3 .food {
+    width:100%; height:70vh;
+}
+
+
+
+#section3 .img-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#section3 .img-list li {
+border: 5px solid transparent;
+box-sizing: border-box;
+width: 25%;
+float: left;
+position: relative;
+cursor: pointer;
+margin-bottom:25px;
+}
+#section3 .img-list img {
+max-width: 100%;
+vertical-align: middle;
+}
+
+/* Image Placeholder Styles
+-------------------------------------------------------------- */
+#section3 .img-placeholder:before,
+#section3 .img-placeholder:after {
+
+content: "";
+display: block;
+ position: absolute;
+    color:aqua;
+}  
+
+
+
+#section3 .img-placeholder {
+color:#fff;
+    margin-top: -10%;
+line-height: 30px;
+ font-size: 17px;
+    font-weight:400;
+text-align: center;
+display: block;
+ position: absolute;
+    
+}
+
+/* The hover effect
+-------------------------------------------------------------- */
+#section3 .img-list li:before {
+transition: all .5s ease;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #333;
+transform: scale(0);
+}
+#section3 .img-list li:hover:before {
+opacity: .5;
+transform: scale(1);
+}
+#section3 .img-list li:after {
+transition: all .6s ease .2s;
+content: "";
+position: absolute;
+top: 8px;
+left: 8px;
+right: 8px;
+bottom: 30px;
+border: 1px solid #aaa;
+background: #000;
+opacity: 0;
+transform: scale(0);
+}
+#section3 .img-list li:hover:after {
+opacity: .35;
+transform: scale(1);
+    color:#ccc;
+}
+
+
+
+
+/*modal*/
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}

@@ -1,0 +1,611 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+#main {
+    background-color: white;
+    border:0px solid black;
+    height:210vh;
+    
+}
+.container h2 {
+    text-align:center;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 25px auto;
+    
+}
+
+.container1{
+	
+	margin: 0 auto;
+}
+
+
+
+ul.tabs{
+	margin-left: 25%;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:200px;
+    text-align: center;
+    
+}
+
+ul.tabs li.current{
+	background: rgba(239, 205, 205, 0.79);
+	color: #222;
+    border-bottom: 3px solid rgba(216, 23, 23, 0.81);
+    font-weight: bold;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+    overflow:hidden;
+    
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+/*tab-1 card*/
+
+ 
+#tab-1 header h2 {
+    margin:30px auto;
+}
+#tab-1 header h3 {
+    margin:30px auto;
+    text-align: center;
+}
+#tab-1 header h4 {
+    margin-left: 3.5%;
+}
+#tab-1 .grid {
+	 list-style: none;
+	 margin-left: -40px;
+}
+ #tab-1 .gc {
+	 box-sizing: border-box;
+	 display: inline-block;
+	 margin-right: -0.25em;
+	 min-height: 1px;
+	 padding-left: 40px;
+	 vertical-align: top;
+}
+ #tab-1 .gc--1-of-3{
+	 width: 33.33333%;
+}
+ #tab-1 .gc--2-of-3  {
+	 width: 66.66666%;
+     
+}
+#tab-1 .nacc li:nth-child(2){
+    margin-top:45%;
+}
+
+
+ #tab-1 .naccs {
+	 position: relative;
+	 max-width: 900px;
+	 margin: 50px auto 0;
+}
+ #tab-1 .naccs .menu div {
+     width:11em; height:13em;
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 10px;
+	 color: #e9eaf2;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+     font-size:21.5px;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#tab-1 .naccs .menu div:first-child{
+    background: url(../img/ann/gold.png);
+    background-size: 100% 100%;
+}
+#tab-1 .naccs .menu div:last-child{
+    background: url(../img/ann/green.png);
+    background-size: 100% 100%;
+}
+ #tab-1 .naccs .menu div:hover {
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ #tab-1 .naccs .menu div span.light {
+	 height: 100%;
+	 width: 100%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 font-size: 24px;
+     text-indent: -10px;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-1 .naccs .menu div.active span.light {
+	 background-color: rgba(0, 0, 0, 0.21);
+	 left: 0;
+	 height: 100%;
+	 width: 100%;
+	 top: 0;
+	 border-radius: 0;
+}
+ #tab-1 .naccs .menu div.active {
+	 color: rgba(10, 9, 9, 0.74);
+	 padding: 15px 20px 15px 20px;
+     line-height: 19em;
+     text-align: center;
+     font-weight: bold;
+}
+
+
+
+ #tab-1 ul.nacc {
+	 position: relative;
+	 height: 0px;
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-1 ul.nacc li {
+	 opacity: 0;
+	 transform: translateX(50px);
+	 position: absolute;
+	 list-style: none;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+     background: rgba(195, 195, 195, 0.76);
+     padding:20px 20px 20px 20px;
+}
+ #tab-1 ul.nacc li.active {
+	 transition-delay: 0.3s;
+	 z-index: 2;
+	 opacity: 1;
+	 transform: translateX(0px);
+}
+ #tab1 ul.nacc li p {
+     font-size:15px;
+     
+}
+
+
+
+
+/*tab2*/
+
+
+/*  SECTIONS  ============================================================================= */
+
+#tab-2 #tab-2 .section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+#tab-2 #tab-2 .group:before,
+#tab-2 #tab-2 .group:after {
+    content:"";
+    display:table;
+}
+#tab-2 #tab-2 .group:after {
+    clear:both;
+}
+#tab-2 #tab-2 .group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+#tab-2 .col {
+	display: block;
+	float:left;
+	margin: 1% 2%; 1% 1%;
+    width:14em; height:22em;
+    border:1px solid rgba(87, 87, 87, 0.35);
+    background-color: rgba(196, 253, 198, 0.23)
+}
+#tab-2 .col img {
+    width:100%; height:13em;
+}
+#tab-2 .col h3 {
+    margin:20px auto; font-size: 20px;
+}
+#tab-2 .col h3:nth-child(5){
+    font-size: 17px;
+    margin:15px auto; 
+}
+#tab-2 .col h3:nth-child(6){
+    font-size: 17px;
+    margin:15px auto; 
+}
+#tab-2 .col h3:nth-child(7){
+    font-size: 17px;
+    margin:15px auto; 
+}
+#tab-2 .col h3:nth-child(8){
+    font-size: 17px;
+    margin:15px auto; 
+}
+
+ #tab-2  h3 {
+        margin:30px auto;
+    }   
+    
+
+/* 15 */
+.btn-15 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+
+/* 16 */
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+/*tab-3*/
+
+#tab-3 .band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+#tab-3 {
+    height:100%;
+    padding:20px 20px 20px 20px;
+    
+}
+
+
+/* card */
+
+#tab-3 .card {
+  min-height: 98%;
+    height:75%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+#tab-3 .card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+#tab-3 .card .thumb {
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
+
+#tab-3 .card p { 
+  flex: 1; /* make p grow to fill available space*/
+  line-height: 25px;
+}
+
+/* typography */
+#tab-3 h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+#tab-3 header h3 {
+    margin:30px auto;
+    text-align: center;
+    font-size: 25px;
+}
+#tab-3 .card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 0.5em 0 0 0;
+}
+#tab-3 .card span:first-child{
+   margin: 2em 0 0 0; 
+}
+#tab-3 .card h1:first-child {
+    line-height: 38px;
+}
+#tab-3 .card h3:first-child {
+    line-height: 35px;
+    font-size: 17px;
+    color:#4155c1
+}
+#tab-3 .card h3 {
+    line-height: 25px;
+    font-size: 17px;
+    color:#4155c1;
+}
+/*tab3 btn*/
+/* 15 */
+.btn-15 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+    width:10em; height:3em;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	#tab-2 .col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+
+@media only screen and (min-width: 500px) {
+  #tab-3 .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  #tab-3 .item-1 {
+  grid-column: 1/ span 2;
+  }
+  #tab-3 .item-1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #tab-3 .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+/**/
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    
+    
+    ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:120px;
+    text-align: center;
+    
+}
+ 
+ 
+    
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+  #main {
+    background-color: white;
+    border:0px solid black;
+    height:240vh;
+}
+    
+    ul.tabs{
+	margin-left: 5%;;
+	padding: 0px;
+	list-style: none;
+    margin-top:15%;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:125px;
+    text-align: center;
+    
+}
+  
+   #tab-1 .naccs .menu div {
+     width:7em; height:8em;
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 25px;
+	 color: #e9eaf2;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+     font-size: 19px;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}  
+ #tab-1 .naccs .menu div.active {
+	 color: rgba(20, 19, 19, 0.74);
+	 padding: 15px 10px 15px 20px;
+     line-height: 14em;
+     text-align: center;
+}
+    
+    
+    #tab-2 {
+        overflow:auto;
+     width:100%;   
+    height:190vh;
+}
+    
+   
+ 
+    
+  #tab-3 .card h3 {
+    line-height: 25px;
+    font-size: 16px;
+    color:#4155c1;
+}  
+     #tab-3 {
+        overflow: auto;
+        height:200vh;
+    }  
+  #tab-3 .card p { 
+  flex: 1; /* make p grow to fill available space*/
+  line-height: 30px;
+}
+    #tab-3 .band div  {
+        float:left;
+        width:100%; height:50vh;
+        margin-right: 10%;
+    }
+    
+    
+    .container1{
+	width: 100%; 
+	 top:0;
+}
+    #footer{
+        margin-top: 20%;
+    }
+    
+
+
+      
+    
+    
+    
+    
+}
+

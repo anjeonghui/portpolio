@@ -1,0 +1,1060 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+#main {
+    background-color: white;
+    border:0px solid black;
+    height:250vh;
+}
+.container h2 {
+    text-align:center;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 25px auto;
+    
+}
+
+.container1{
+	
+	margin: 0 auto;
+}
+
+
+
+ul.tabs{
+	margin-left: 25%;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:200px;
+    text-align: center;
+    
+}
+
+ul.tabs li.current{
+	background: rgba(239, 205, 205, 0.79);
+	color: #222;
+    border-bottom: 3px solid rgba(216, 23, 23, 0.81);
+    font-weight: bold;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+    overflow:hidden;
+    
+}
+
+.tab-content.current{
+	display: inherit;
+    
+}
+/*tab1 투어소개*/
+#tab-1 {
+    height:210vh;
+}
+#tab-1 .incontainer {
+	 display: flex;
+	 width: 100%;
+	 padding: 4% 2%;
+	 box-sizing: border-box;
+	 height: 70vh;
+    
+}
+ #tab-1 .box {
+	 flex: 1;
+	 overflow: hidden;
+	 transition: 0.5s;
+	 margin: 0 2%;
+	 box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+	 line-height: 0;
+  position: relative;
+     cursor:pointer;
+}
+ #tab-1 .box > img {
+	 width: 200%;
+	 height: calc(100% - 10vh);
+	 object-fit: cover;
+	 transition: 0.5s;
+}
+ #tab-1 .box > span {
+	 font-size: 3vh;
+	 display: block;
+	 text-align: center;
+	 height: 10vh;
+	 line-height: 120px;
+}
+ #tab-1 .box:hover {
+	 flex: 1 1 50%;
+}
+ #tab-1 .box:hover > img {
+     width: 100%;
+	 height: 100%;
+}
+ #tab-1 .box:hover > span {
+	display: none;
+}
+
+
+#tab-1 .box figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 60px 20px 20px 40%;
+  
+}
+
+#tab-1 .box figcaption:before,
+#tab-1 .box figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(22, 199, 111, 0.56);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.box figcaption:before {
+  -webkit-transform: skew(30deg) translateX(100%);
+  transform: skew(30deg) translateX(100%);
+}
+
+.box figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(90%);
+  transform: skew(-30deg) translateX(90%);
+}
+
+
+.box h3,
+.box h2,
+.box p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+
+
+.box h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+    text-indent: 2em;
+    margin-left: 10%;
+    background: linear-gradient(to left, rgba(227, 234, 231, 0.73) 40%,#e87350 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 2px 4px rgba(100, 73, 77, 0.29);
+}
+.box h2 {
+    font-size: 20px;
+    text-indent: 2em;
+    margin-left: 15%;
+    
+}
+#tab-1 .box p {
+  font-size: 0.9em;
+    color:rgba(46, 46, 47, 0.85);
+    line-height: 27px;
+    font-weight: 500;
+    color:#fff;
+}
+
+#tab-1 .box a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#tab-1 .box:hover h3,
+#tab-1 .box.hover h3,
+#tab-1 .box:hover h2,
+#tab-1 .box.hover h2,
+#tab-1 .box:hover p,
+#tab-1 .box.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+    
+}
+
+#tab-1 .box:hover:before,
+#tab-1 .box.hover:before {
+  -webkit-transform: skew(30deg) translateX(30%);
+  transform: skew(30deg) translateX(30%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+#tab-1 .box:hover:after,
+#tab-1 .box.hover:after {
+  -webkit-transform: skew(-30deg) translateX(20%);
+  transform: skew(-30deg) translateX(20%);
+}
+
+.box:hover figcaption:before,
+.box.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(50%);
+  transform: skew(30deg) translateX(50%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+#tab-1 .box:hover figcaption:after,
+#tab-1 .box.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(40%);
+  transform: skew(-30deg) translateX(40%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/*tab1 투어소개*/
+/*프리미엄 투어추천 코스*/
+    #tab-1 .coursebox {
+        width:100%; height:380px;
+        border:1px solid black;
+        padding:20px 20px 20px 20px;
+        clear:both; 
+        background: url(../img/fare/priceDiv_middle_bg.jpg);
+        background-size: cover;
+        background-color: rgba(47,138,241,0.3);
+    }
+#tab-1 .png_box {
+        width:100%; height:140px;
+        border:0px solid black;
+        padding:20px 20px 20px 0px;
+        clear:both; 
+    }
+#tab-1 .png_box li {
+    float:left;
+    width:12vh; height:12vh;
+    margin-left:5vh;
+    border: 0px solid blue;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+#tab-1 .png_box li:hover {
+   background-color: rgba(214, 41, 41, 0.54); 
+}
+
+
+ #tab-1 .text_box {
+        width:100%; height:35px;
+        border:0px solid black;
+        clear:both; 
+        margin:0px 7px 20px -5px;
+     
+    }  
+#tab-1 .text_box li {
+    float:left;
+    width:12%; height:100%;
+    margin-left: 4vh;
+    border: 0px solid blue;
+    text-align: center;
+     font-size: 16px;cursor:pointer;
+    line-height: 30px;
+}
+ #tab-1 .text1_box {
+        width:100%; height:70px;
+        border:0px solid black;
+        clear:both; 
+     line-height: 65px;
+        margin:0px 7px 20px -5px;
+    }  
+#tab-1 .text1_box li {
+    float:left;
+    width:14%; height:100%;
+    margin-left: 2vh;
+    border: 0px solid blue;
+    text-align: center;
+    font-size: 16px;
+    cursor:pointer;
+}
+#tab-1 .text1_box li:hover {
+    background: rgba(204, 28, 28, 0.65);
+    border-radius: 20px;
+     font-weight: bold;
+    color:#ccc;
+}
+#tab-1 .text_box li:hover {
+    background: rgba(204, 28, 28, 0.65);
+    border-radius: 20px;
+    font-weight: bold;
+    color:#ccc;
+}
+
+    
+/*프리미엄 투어추천 코스*/							
+
+
+/*프리미엄 투어이용 요금*/
+#tab-1 header h2 {
+    margin:30px auto;
+}
+
+#tab-1 .tourbill {
+    width:100%; height:380px;
+        border:0px solid black;
+        padding:20px 20px 20px 20px;
+        clear:both; 
+        background: url(../img/fare/priceDiv_middle_bg.jpg);
+        background-size: cover;
+} 
+#tab-1> .tourbill> .prebill {
+    width:100%; height:97%;
+    border:0px solid black;
+    margin:10px auto;
+    
+        
+}
+
+#tab-1 .tourbill>  .prebill li {
+    float:left;
+   width:48%; height:100%;
+    border:0px solid blue;
+    
+}
+
+#tab-1 .tourbill>  .prebill li > .pack {width:100%; height:100%; top:0; left:0; margin:0; }
+
+
+
+#tab-1 .pack li:nth-child(1){
+    width:100%; height:20%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    background-color: rgba(196, 208, 208, 0.66);
+}
+#tab-1 .pack li:nth-child(2){
+    width:100%;height:50%;
+    border-bottom: 1px solid rgba(82, 77, 77, 0.25);
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    background-color: rgba(192, 216, 180, 0.16);
+}
+#tab-1 .pack li:nth-child(3){
+    width:100%;height:30%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    background-color: rgba(236, 248, 235, 0.88);
+}
+#tab-1 .pack2 {width:100%; height:100%; left:0;  }
+
+#tab-1 .pack2 li:first-child{
+    width:100%; height:20%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    margin-right: 3%;
+    background-color: rgba(196, 208, 208, 0.66);
+}
+#tab-1 .pack2 li:last-child{
+    width:100%; height:80%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    margin-right: 3%;
+    background-color: rgba(192, 216, 180, 0.16);
+}
+#tab-1 .pack li:nth-child(1) span {
+    line-height: 55px;
+    font-size: 23px;
+    text-align: center;
+}
+#tab-1 .pack li:nth-child(2) p
+{
+  margin:30px auto;
+    font-size: 17px;
+    text-indent: 5%;
+    
+}
+#tab-1 .pack li:nth-child(3) p
+{
+  margin:10px auto;
+    font-size: 16px;
+    text-indent: 5%;
+}
+#tab-1 .pack2 li:nth-child(1) span {
+    line-height: 55px;
+    font-size: 23px;
+    text-align: center;
+}
+#tab-1 .pack2 li:nth-child(2) p
+{
+  margin:30px auto;
+    font-size: 17px;
+    text-indent: 5%;
+    
+}
+
+
+
+
+/*매직패스 */ 
+   #tab-2 {
+    height:70vh;
+} 
+#tab-2 header h2 {
+    margin:30px auto;
+}
+#tab-2 header h3 {
+    margin:30px auto;
+    text-align: center;
+}
+
+#tab-2 .grid {
+	 list-style: none;
+	 margin-left: -40px;
+}
+ #tab-2 .gc {
+	 box-sizing: border-box;
+	 display: inline-block;
+	 margin-right: -0.25em;
+	 min-height: 1px;
+	 padding-left: 40px;
+	 vertical-align: top;
+}
+ #tab-2 .gc--1-of-3 {
+	 width: 33.33333%;
+}
+ #tab-2 .gc--2-of-3 {
+	 width: 66.66666%;
+}
+ #tab-2 .naccs {
+	 position: relative;
+	 max-width: 900px;
+	 margin: 50px auto 0;
+}
+ #tab-2 .naccs .menu div {
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 10px;
+	 color: #e9eaf2;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+     font-size: 20px;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-2 .naccs .menu div:hover {
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ #tab-2 .naccs .menu div span.light {
+	 height: 10px;
+	 width: 10px;
+	 position: absolute;
+	 top: 24px;
+	 left: 15px;
+	 background-color: #303f9f;
+	 border-radius: 100%;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-2 .naccs .menu div.active span.light {
+	background-color: #7bded3;
+	 left: 0;
+	 height: 3%;
+	 width: 100%;
+	 top: 100%;
+	 border-radius: 0;
+}
+ #tab-2 .naccs .menu div.active {
+	 color: #fbc02d;
+	 padding: 15px 20px 15px 20px;
+}
+ #tab-2 ul.nacc {
+	 position: relative;
+	 height: 0px;
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-2 ul.nacc li {
+	 opacity: 0;
+	 transform: translateX(50px);
+	 position: absolute;
+	 list-style: none;
+     background: rgba(195, 195, 195, 0.76);
+     padding:20px 20px 20px 20px;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-2 ul.nacc li.active {
+	 transition-delay: 0.3s;
+	 z-index: 2;
+	 opacity: 1;
+	 transform: translateX(0px);
+}
+ #tab-2 ul.nacc li p {
+	 margin: 0;
+     line-height: 35px;
+}
+#tab-2 ul.nacc li p:nth-child(1){
+    font-size: 20px;
+}
+
+
+
+
+
+/*티켓요금*/
+ #tab-3 {
+    height:220vh;
+} 
+#tab-3 header h2 {
+    margin:30px auto;
+}
+#tab-3 header h3, h4 {
+    margin:30px auto;
+    text-align: center;
+}
+/**/
+
+ #tab-3 .grid {
+	 list-style: none;
+	 margin-left: -40px;
+     overflow:hidden;
+}
+ #tab-3 .gc {
+	 box-sizing: border-box;
+	 display: inline-block;
+	 margin-right: -0.25em;
+	 min-height: 1px;
+	 padding-left: 40px;
+	 vertical-align: top;
+}
+ #tab-3 .gc--1-of-3 {
+	 width: 33.33333%;
+}
+ #tab-3 .gc--2-of-3 {
+	 width: 66.66666%;
+}
+ #tab-3 .naccs {
+	 position: relative;
+	 max-width: 900px;
+	 margin: 100px auto 0;
+}
+ #tab-3 .naccs .menu div {
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 10px;
+	 color: #e9eaf2;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+     font-size: 20px;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-3 .naccs .menu div:hover {
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ #tab-3 .naccs .menu div span.light {
+	 height: 10px;
+	 width: 10px;
+	 position: absolute;
+	 top: 24px;
+	 left: 15px;
+	 background-color: #303f9f;
+	 border-radius: 100%;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ #tab-3 .naccs .menu div.active span.light {
+	 background-color: #7bded3;
+	 left: 0;
+	 height: 3%;
+	 width: 100%;
+	 top: 100%;
+	 border-radius: 0;
+}
+ #tab-3 .naccs .menu div.active {
+	 color: #fbc02d;
+	 padding: 15px 20px 15px 20px;
+}
+ #tab-3 ul.nacc {
+	 position: relative;
+	 height: 0px;
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+     
+}
+ #tab-3 ul.nacc li {
+	 opacity: 0;
+	 transform: translateX(50px);
+	 position: absolute;
+	 list-style: none;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+     background: rgba(195, 195, 195, 0.76);
+     padding:20px 20px 20px 20px;
+}
+ #tab-3 ul.nacc li.active {
+	 transition-delay: 0.3s;
+	 z-index: 2;
+	 opacity: 1;
+	 transform: translateX(0px);
+}
+
+ #tab-3 ul.nacc li p {
+	 margin: 0;
+     line-height: 35px;
+}
+#tab-3 ul.nacc li span{
+    font-size: 20px;
+}
+
+
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pc사이즈 끝*/
+
+
+
+
+/*티켓요금*/
+
+@media screen and (min-width: 1025px){
+    #tab-1 .courseboxm {display:none;}
+    #tab-1 .png_boxm {display:none;}
+    
+}   
+
+
+
+
+
+
+
+
+
+
+/*아이패드 사이즈*/
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #tab-1 .courseboxm {display:none;}
+    #tab-1 .png_boxm {display:none;}
+    
+    ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:120px;
+    text-align: center;
+    
+}
+
+  #tab-1 .incontainer {
+	 display: flex;
+	 width: 65vh;
+	 padding: 4% 2%;
+	 box-sizing: border-box;
+	 height: 45vh;
+    
+}    
+   
+
+    
+    
+#tab-1 .png_box li {
+    float:left;
+    width:8vh; height:8vh;
+    margin-left:2vh;
+    border: 0px solid blue;
+    border-radius: 100%;
+    
+}
+
+#tab-1 .text_box li {
+    float:left;
+    width:10%; height:100%;
+    margin-left: 3.3vh;
+    border: 0px solid blue;
+    text-align: center;
+     font-size: 16px;
+}    
+    
+ #tab-1 .text1_box li {
+    float:left;
+    width:12%; height:100%;
+    margin-left: 2vh;
+    border: 0px solid blue;
+    text-align: center;
+    font-size: 14px;
+}   
+    
+    
+}
+
+
+
+
+
+
+
+
+
+/*모바일*/
+
+@media screen and (max-width: 768px) {
+ #main {
+    background-color: white;
+    border:0px solid black;
+    height:270vh;
+}
+   
+    
+    ul.tabs{
+	margin-left: 5%;;
+	padding: 0px;
+	list-style: none;
+    margin-top:15%;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    width:120px;
+    text-align: center;
+    
+}
+ /*tab1 투어소개*/
+   
+    #tab-1 .container1{
+	 width: 100%; 
+	 overflow:auto;
+}
+ 
+   
+    
+#tab-1 .incontainer {
+	 display: flex;
+	 width: 45vh;
+	 padding: 4% 2%;
+	 box-sizing: border-box;
+	 height: 45vh;
+    
+}  
+ 
+ #tab-1 .box figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 20px 10px 20px 20%;
+  
+}   
+    
+#tab-1 .box h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+    text-indent: 0em;
+     color:rgba(25, 24, 24, 0.82);
+    
+}
+#tab-1 .box h2 {
+    font-size: 20px;
+    text-indent: 2em;
+    margin-left: 15%;
+    
+}
+#tab-1 .box p {
+  font-size: 0.9em;
+    color:rgba(46, 46, 47, 0.85);
+    line-height: 27px;
+    font-weight: 500;
+    color:#fff;
+}
+ 
+    
+    
+  #tab-1 .box > img {
+	 width: 250vh;
+	 height: calc(100% - 10vh);
+	 object-fit: cover;
+	 transition: 0.5s;
+}
+ #tab-1 .box:hover > img {
+	 width: 100%;
+	 height: 100%;
+}
+   #tab-1 .box > span {
+	 font-size: 1.8vh;
+	 display: block;
+	 text-align: center;
+	 height: 10vh;
+	 line-height: 120px;
+}  
+
+    
+    
+    /*프리미엄 투어추천 코스*/
+    
+    #tab-1 .coursebox {
+        display: none;
+        
+    }
+    #tab-1 .courseboxm {
+        width:100%; height:800px;
+        border:1px solid black;
+        padding:20px 20px 20px 20px;
+        overflow:auto; 
+        
+    }
+#tab-1 .png_boxm {
+        width:100%; height:96%;
+        border:1px solid black;
+        padding:20px 20px 20px 0px;
+        clear:both; 
+        position: relative;
+    }
+#tab-1 .png_boxm li {
+    float:left;
+    width:130px; height:130px;
+    margin-bottom: 23%;
+    margin-left: 10%;
+    border: 1px solid blue;
+    border-radius:100%;
+}
+ #tab-1 .text_box {
+        display: none;
+     
+    } 
+  
+    
+ #tab-1 .text1_box {
+        display:none;
+    }  
+    #tab-1 .png_boxm span {
+        position: absolute;
+        margin-top:40%;
+        text-align: center;
+        cursor: pointer;
+    }
+#tab-1 .png_boxm p {
+        position: absolute;
+    margin-top:45%;
+    text-align: center;
+    cursor: pointer;
+    }
+
+ #tab-1 .png_boxm span:hover {
+    background: rgba(204, 28, 28, 0.65);
+    border-radius: 20px;
+     font-weight: bold;
+    color:#ccc;
+}
+#tab-1 .png_boxm p:hover {
+    background: rgba(204, 28, 28, 0.65);
+    border-radius: 20px;
+    font-weight: bold;
+    color:#ccc;
+}  
+
+    
+/*프리미엄 투어추천 코스*/
+  
+    
+    #tab-1 .tourbill {
+        width:100%; height:65vh;
+        border:0px solid black;
+        padding:20px 20px 20px 0px;
+        overflow: auto;
+        
+    }
+   #tab-1> .tourbill> .prebill {
+    width:100%; height:70vh;
+    border:0px solid black;
+    margin:10px auto;
+    padding:10px 10px 10px 0px;
+        
+}
+
+#tab-1 .tourbill>  .prebill li {
+    float:left;
+   width:100%; height:35vh;
+    border:0px solid blue;
+    
+} 
+    
+#tab-1 .tourbill>  .prebill li > .pack {width:100%; height:100%; top:0; left:0; margin:0; }
+
+
+
+#tab-1 .pack li:nth-child(1){
+    width:100%; height:15%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    background-color: rgba(196, 208, 208, 0.66);
+}
+#tab-1 .pack li:nth-child(2){
+    width:100%;height:45%;
+    border-bottom: 1px solid rgba(82, 77, 77, 0.25);
+    border: 1px solid rgba(82, 77, 77, 0.25);
+}
+#tab-1 .pack li:nth-child(3){
+    width:100%;height:25%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+}
+#tab-1 .pack2 {width:100%; height:100%; left:0;  }
+
+#tab-1 .pack2 li:first-child{
+    width:100%; height:15%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    margin-right: 3%;
+    background-color: rgba(196, 208, 208, 0.66);
+}
+#tab-1 .pack2 li:last-child{
+    width:100%; height:60%;
+    border: 1px solid rgba(82, 77, 77, 0.25);
+    margin-right: 3%;
+}
+#tab-1 .pack li:nth-child(1) span {
+    line-height: 55px;
+    font-size: 23px;
+    text-align: center;
+}
+#tab-1 .pack li:nth-child(2) p
+{
+  margin:30px auto;
+    font-size: 17px;
+    text-indent: 5%;
+    
+}
+#tab-1 .pack li:nth-child(3) p
+{
+  margin:10px auto;
+    font-size: 16px;
+    text-indent: 5%;
+}
+#tab-1 .pack2 li:nth-child(1) span {
+    line-height: 55px;
+    font-size: 23px;
+    text-align: center;
+}
+#tab-1 .pack2 li:nth-child(2) p
+{
+  margin:30px auto;
+    font-size: 17px;
+    text-indent: 5%;
+    
+}
+
+
+
+
+
+
+/*프리미엄 투어소개 끝*/
+   
+    
+     /*매직패스 스타일 */ 
+     #tab-3 {
+    height:240vh;
+} 
+    
+   #tab-3 header h2 {
+    margin:40px auto;
+       
+}
+#tab-3 header h3, h4 {
+    margin:30px auto;
+    text-align: center;
+} 
+    
+    #tab-3 .naccs .menu div {
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 10px;
+	 color: #e9eaf2;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+     font-size: 20px;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        width:8em; 
+        font-size: 1.2em;
+}
+    
+   #tab-3 ul.nacc li span{
+    font-size: 15px;
+}
+ 
+    
+    
+    #footer{
+        margin-top: 20%;
+    }
+    
+
+
+      
+    
+    
+    
+    
+}
+

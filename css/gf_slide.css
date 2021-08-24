@@ -1,0 +1,29 @@
+ * {margin:0; padding:0; box-sizing: border-box;}
+        li {list-style: none;}
+        a {text-decoration: none; color:#000;}
+        img {vertical-align: top; width: 100%;}
+        
+        html, body {
+            width: 100%; height: 60vh;
+        clear:both;
+        }
+.splide__list {
+    width:100%; height:100%;
+    
+}
+.splide__slide li {
+    margin-left:10px;
+    margin-bottom: 15px;
+}
+.splide__slide h2 {
+    line-height: 45px;
+    padding:15px;
+}
+
+.splide__slide h4 {
+    line-height: 45px;
+}
+
+.splide__slide div p {
+    line-height:35px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dopetrope by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="fullPage fixed full-screen backgrounds." />
+		<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+		
+		<link rel="stylesheet" href="css/fes.css"  media="screen" charset="utf-8"/>
+		<link media="screen and (max-width:768px)" rel="stylesheet" href="css/fes_m.css">
+		<link rel="stylesheet" href="css/sec3_modal1.css" />
+		
+	    <link rel="stylesheet" href="css/swiper.min.css">
+
+
+		
+		
+		 
+		 <script src="js/jquery.js"></script>
+		  <script src="js/fes.js"></script>
+		  <script type="text/javascript" src="js/sec1_slide1.js"></script>
+	
+
+
+  
+</head>
+<body>
+   <!-- Page Wrap -->
+<div class="page-wrap">
+
+  <div id="home-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-one">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-one">
+              <h1>장소 : <span class="emphasis">어드벤처 1층 로티의 열기구 여행</span>. <br><span>월드 카트레이싱</span></h1>
+              <p>월드 카트레이싱</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-two">
+              <p class="paragraph">
+                롯데월드에서 신나게 카트라이더 레이싱을 할 수 있는 곳이 있다?!
+카트라이더의 주인공이 되어 롯데월드를 신나게 달려보아요!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-two">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-three">
+              <h1>장소 : <span class="emphasis">어드벤처 4층</span> <br><span>그럴싸진관</span></h1>
+              <p>그럴싸진관</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-four">
+              <p class="paragraph">
+                무더운 여름날 시원한 여행을 원해?
+롯데월드 그럴싸진관에서 여름여행을 떠나요!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-three">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-five">
+              <h1>장소 : <span class="emphasis">어드벤처 4층</span>. <br><span>세젤예고</span></h1>
+              <p>세젤예고</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-six">
+              <p class="paragraph">
+                로티로리가 만든 세상에서 가장 예쁜 학교에 놀러오세요!
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+</div>
+     <script src="js/swiper.min.js"></script> 
+<script>
+       
+      var mySwiper = new Swiper(".swiper-container", {
+  direction: "vertical",
+  loop: true,
+  pagination: ".swiper-pagination",
+  grabCursor: true,
+  speed: 1000,
+  paginationClickable: true,
+  parallax: true,
+  autoplay: false,
+  effect: "slide",
+  mousewheelControl: 1,
+       pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+});
+      
+    </script>
+  
+</body>
+</html>
